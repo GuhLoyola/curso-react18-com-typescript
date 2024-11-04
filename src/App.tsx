@@ -17,13 +17,23 @@ class App extends React.Component {
 // Exemplo de um componente de FUNÇÃO: 
 
 const App = () => {
+
+  const isLogged = true
+
   return (
     <>
-      <h1>Esse é um componente de função</h1>
+      <h1>
+        {isLogged ? 'Esse é um componente de função' : 'Não está logado'}
+      </h1>
 
-      <User />
+      {isLogged && <User />}
+
+      {/* Também da pra usar o operador ternário */}
     </>
   )
+
+
+
 }
 
 export default App

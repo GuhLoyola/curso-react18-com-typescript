@@ -1,6 +1,9 @@
 const UserName = () => {
+
+    let name = 'Gustavo'
+
     return (
-        <h4>Meu nome é Gustavo Loyola</h4>
+        <h4>Meu nome é {name.toUpperCase()}</h4>
     )
 }
 
