@@ -1,5 +1,7 @@
 // Exemplo de um componente de CLASSE:
 
+import User from "./components/User"
+
 /*
 
 import React from "react";
@@ -16,7 +18,11 @@ class App extends React.Component {
 
 const App = () => {
   return (
-    <h1>Esse é um componente de função</h1>
+    <>
+      <h1>Esse é um componente de função</h1>
+
+      <User />
+    </>
   )
 }
 
