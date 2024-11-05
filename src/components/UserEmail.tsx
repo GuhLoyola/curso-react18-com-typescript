@@ -1,5 +1,5 @@
 type Props = {
-    email: string
+    email?: string
 }
 
 const UserEmail = ({ email }: Props) => {
