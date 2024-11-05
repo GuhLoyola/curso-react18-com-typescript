@@ -5,7 +5,7 @@ import UserRoles from "./UserRoles"
 
 type Props = {
     name: string;
-    email: string;
+    email?: string;
     age: number;
     role: {
         id: number,
@@ -13,13 +13,13 @@ type Props = {
     }[]
 }
 
-const User = (props: Props) => {
+const User = ({ name, age, role, email }: Props) => {
     return (
         <>
-            <UserName name={props.name} />
-            <UserEmail email={props.email} />
-            <UserAge age={props.age} />
-            <UserRoles roles={props.role} />
+            <UserName name={name} />
+            {email && <UserEmail email={email} />}
+            <UserAge age={age} />
+            <UserRoles roles={role} />
         </>
     )
 }
