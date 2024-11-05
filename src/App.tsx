@@ -18,15 +18,13 @@ class App extends React.Component {
 
 const App = () => {
 
-  const isLogged = true
-
   return (
     <>
       <h1>
-        {isLogged ? 'Esse é um componente de função' : 'Não está logado'}
+        Meu primeiro componente de usuário
       </h1>
 
-      {isLogged && <User />}
+      <User name="Gustavo" email="gustavo.loyola@gmail.com" age={21} role={[{ id: 1, job: 'CEO' }]} />
 
       {/* Também da pra usar o operador ternário */}
     </>

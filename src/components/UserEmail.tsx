@@ -1,6 +1,10 @@
-const UserEmail = () => {
+type Props = {
+    email: string
+}
+
+const UserEmail = ({ email }: Props) => {
     return (
-        <h4>Meu email é gustavo.loyola@gmail.com</h4>
+        <h4>Meu email é {email}</h4>
     )
 }
 

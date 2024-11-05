@@ -1,7 +1,8 @@
-const UserName = () => {
+type Props = {
+    name: string
+}
 
-    let name = 'Gustavo'
-
+const UserName = ({ name }: Props) => {
     return (
         <h4>Meu nome é {name.toUpperCase()}</h4>
     )

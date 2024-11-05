@@ -1,6 +1,10 @@
-const UserAge = () => {
+type Props = {
+    age: number;
+}
+
+const UserAge = ({ age }: Props) => {
     return (
-        <h4>Eu tenho 21 anos</h4>
+        <h4>Eu tenho {age} anos</h4>
     )
 }
 
