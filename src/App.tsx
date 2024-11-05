@@ -26,6 +26,8 @@ const App = () => {
 
       <User name="Gustavo" email="gustavo.loyola@gmail.com" age={21} role={[{ id: 1, job: 'CEO' }]} />
 
+      <User name="João" age={18} role={[{ id: 1, job: 'Admin' }]} />
+
       {/* Também da pra usar o operador ternário */}
     </>
   )
