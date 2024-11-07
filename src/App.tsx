@@ -1,11 +1,11 @@
 import './App.css'
-import EventoPorProp from './components/EventosNoReact/eventoPorProp'
+import RemovendoComportamentosPadrao from './components/EventosNoReact/removendoComportamentosPadrao'
 
 const App = () => {
 
   return (
     <div>
-      <EventoPorProp />
+      <RemovendoComportamentosPadrao />
     </div>
   )
 
